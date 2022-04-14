@@ -40,7 +40,7 @@ def send(y):
     )
 
 
-schedule.every().day.at("21:22").do(send,'It is 21:22')
+schedule.every().day.at("21:00").do(send,'It is 21:00')
 
 
 while True:
