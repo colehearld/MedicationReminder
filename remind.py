@@ -34,7 +34,7 @@ schedule.every().day.at("08:00").do(send,'It is 08:00')
 def send(y):
 
     call = client.messages.create(
-        to="+17047737799",
+        to=config.to,
         from_="+18607184148",
         body=eveningAnnouncement
     )
